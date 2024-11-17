@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+  
+
+body{
+    background: linear-gradient(310.6deg, rgba(100, 0, 233, 0.94) 6.8%, rgba(166, 0, 188, 0.66) 57.8%);
+    min-height: 100vh;
+    width: 100%;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-btn, button, input{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin-top:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.form{
+    background: #fff;
+    width: 50%;
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.edit-modal{
+    display: none;
+}
+
+.edit-modal.show{
+    z-index: 10;
+    display: block;
+    background: #0000008f;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.edit-modal>input{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+}
+
+.edit-modal>button{
+    z-index: 1000;
+}
+
+.form.hide{
+    display: none;
+}
+
+.form input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #9e9e9e;
+    border-radius: 1rem;
+
+}
+
+.add-btn, button{
+    cursor: pointer;
+    background: linear-gradient(310.6deg, rgba(100, 0, 233, 0.94) 6.8%, rgba(166, 0, 188, 0.66) 57.8%);
+    color: #fff;
+    padding: .5rem 1rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list{
+    width: 100%;
+}
+
+.todo-list .todo{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9e9e9e33;
+    padding: .5rem 0;
+}
+
+.todo-list .todo .todo-texts{
+    display: flex;
+    gap: 1rem;
+}
+
+.todo-list .todo .todo-actions{
+    display: flex;
+    gap: 1rem;
+}
+
+.todo-list .todo .todo-texts input{
+    width: 1.1rem;
+}
+
+.todo-h2.add{
+    text-decoration: line-through;
+}
